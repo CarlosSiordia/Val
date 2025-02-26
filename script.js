@@ -3,6 +3,12 @@ const btnCerrar = document.querySelector("#Cerrar");
 
 //Abrir Carta
 btnAbrir.addEventListener("click", () => {
+  window.onload = function() {
+            var audio = document.getElementById("myAudio");
+            audio.volume = 0.3; // Volumen por defecto (0.0 a 1.0)
+            audio.play();
+        };
+  
   const ElementoSuperior = document.querySelector(".superior");
   ElementoSuperior.classList.add("abrir-superior");
 
